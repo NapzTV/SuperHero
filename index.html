@@ -11,17 +11,28 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
+ul
+{
+list-style-type: none;
+}
 </style>
 </head>
 <body>
 <img src="images/header.png" style="width:100%;"/>
 <div align="center">
-    <h1><font color="green">The Nugget Man</h1>
-<button type="button" onclick="alert('Muppets also eat Nuggets')">Catch Phrase</button>
-<button type="button" onclick="showSecretIdentity()">Click to learn secret identity</button>
-    <table>
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#">Tab #1</a></li>
+        <li><a href="#">Tab #2</a></li>
+        <li><a href="#">Tab #3</a></li>
+        <li><a href="#">Tab #4</a></li>
+    </ul>
+<h1><font color="orange">The Nugget Man</h1>
+<button type="button" class="btn" onclick="alert('Muppets also eat Nuggets')">Catch Phrase</button>
+<button type="button" class="btn" onclick="showSecretIdentity()">Click to learn secret identity</button>
         <tr>
             <td valign="top">
+			<center>
                 <h3>Super Powers:</h3>
                 <ul>
                     <li>Blast Crispy Nuggets</li>
@@ -32,6 +43,7 @@
                 <p>Knockoff Spiderman</p>
                 <p>He is a Golden Color</p>
                 <p>He originated from McDonald's Nuggets</p>
+				</center>
 
                 <table>
                     <tr>

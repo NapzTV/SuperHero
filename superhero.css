@@ -1,3 +1,84 @@
 body {
     background-color: transparent;
 }
+
+.btn {
+  background: #ff8c00;
+  background-image: -webkit-linear-gradient(top, #ff8c00, #cf8300);
+  background-image: -moz-linear-gradient(top, #ff8c00, #cf8300);
+  background-image: -ms-linear-gradient(top, #ff8c00, #cf8300);
+  background-image: -o-linear-gradient(top, #ff8c00, #cf8300);
+  background-image: linear-gradient(to bottom, #ff8c00, #cf8300);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #ffbf7a;
+  background-image: -webkit-linear-gradient(top, #ffbf7a, #deb368);
+  background-image: -moz-linear-gradient(top, #ffbf7a, #deb368);
+  background-image: -ms-linear-gradient(top, #ffbf7a, #deb368);
+  background-image: -o-linear-gradient(top, #ffbf7a, #deb368);
+  background-image: linear-gradient(to bottom, #ffbf7a, #deb368);
+  text-decoration: none;
+}
+
+.tabs {
+    width:100%;
+    display:inline-block;
+}
+ 
+
+    .tab-links:after {
+        display:block;
+        clear:both;
+        content:'';
+    }
+ 
+    .tab-links li {
+        margin:0px 5px;
+        float:left;
+        list-style:none;
+    }
+ 
+        .tab-links a {
+            padding:9px 15px;
+            display:inline-block;
+            border-radius:3px 3px 0px 0px;
+            background:#ffc300;
+            font-size:16px;
+            font-weight:600;
+            color:#4c4c4c;
+            transition:all linear 0.15s;
+        }
+ 
+        .tab-links a:hover {
+            background:#ffdb68;
+            text-decoration:none;
+        }
+ 
+    li.active a, li.active a:hover {
+        background:#fff;
+        color:#4c4c4c;
+    }
+ 
+    .tab-content {
+        padding:15px;
+        border-radius:3px;
+        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+        background:#fff;
+    }
+ 
+        .tab {
+            display:none;
+        }
+ 
+        .tab.active {
+            display:block;
+        }
